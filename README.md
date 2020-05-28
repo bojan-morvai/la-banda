@@ -14,3 +14,5 @@ Features:
 - Audio player
 - Press materials for download
 - Three pages (landing, biography, gallery)
+
+There are public/audio and public/photos folders which are untracked by git due to it's sizes
