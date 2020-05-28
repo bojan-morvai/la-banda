@@ -1,0 +1,369 @@
+@-ms-viewport {
+	width: device-width;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	scroll-behavior: smooth;
+	cursor: default;
+}
+
+body {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	-moz-justify-content: -moz-flex-start;
+	-webkit-justify-content: -webkit-flex-start;
+	-ms-justify-content: -ms-flex-start;
+	justify-content: flex-start;
+	-ms-overflow-style: scrollbar;
+	background-color: #fbf8f4;
+	width: 100%;
+	min-height: 30rem;
+	display: none;
+}
+
+@media screen and (max-width: 736px) {
+
+	html {
+		height: auto;
+	}
+
+	body {
+		height: auto;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	html, body {
+		min-width: 320px;
+	}
+
+}
+
+.navbar {
+	font-family: Georgia, serif;
+    font-size: 1.25rem;
+    font-weight: 100;
+    background-color: #fbf8f4;
+}
+
+#mainNavbar .nav-link {
+    color: black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #e0c8a9;
+}
+
+.navbar-toggler{
+	float:right;
+}
+.navbar-toggler-icon{
+	color:black;
+}
+
+.nav-kontakt{
+	float: right;
+}
+
+.flag{
+	width: 33px;
+}
+
+.dropdown-menu{
+	background-color: #fbf8f4;
+	width: 15rem;
+	border: none;
+}
+
+.dropdown-item{
+	font-size: 1.4rem;
+	color: black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.dropdown-item:hover {
+    color: #e0c8a9;
+    background-color: transparent;
+}
+
+
+h1{
+	font-family: 'Alex Brush', cursive;
+	font-size: 6rem;
+	font-style: bold;
+	text-align: center;
+	margin: 5rem;
+}
+
+.naslov-ucitavanje{
+	display: none;
+}
+
+.cover-pic{
+	width: 100%;
+}
+
+.kontenjer{
+	width: 100%;
+}
+
+.div_video{
+	margin-top: 7rem;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.div_video h1{
+	margin: 3rem;
+	font-size: 5rem;
+}
+
+.boja-about{
+	background-color: #e0c8a9;
+}
+
+.about{
+	margin-top: 10rem;
+	display: flex;
+	justify-content: center;
+	height: 20rem;
+}
+
+.naslov-o-nama{
+	text-align: center;
+	display: block;
+	margin: auto 0;
+	font-size: 3rem;
+	width: 80%;
+
+}
+
+.info{
+	margin: auto;
+	padding-left: 2rem;
+}
+
+.tekst-about{
+	padding-right: 3rem;
+	text-align: justify;
+}
+
+.h-line{
+    height: 1.5px;
+    border: 0;
+    background-image: linear-gradient(90deg, transparent, rgb(130,81,17), transparent);
+}
+
+.contact{
+	margin-top: 10rem;
+	color:black;
+	display: flex;
+	font-size: 1.2rem;
+	background-color: black;
+	justify-content: center;
+}
+
+.contact-info{
+	background: rgb(130,81,17);
+	background: linear-gradient(90deg, rgba(130,81,17,1) 0%, rgba(224,200,169,1) 50%);
+	margin:0;
+	width: 40%;
+	text-align: center;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.contact-slika{
+	width: 60%;
+}
+.contact-slika img{
+	width: 100%;
+}
+
+.contact-info h1{
+	margin: 12% 0;
+	font-size: 2.7rem;
+}
+
+.contact-info a{
+	color: black;
+}
+.contact-linkovi{
+	margin-top: 5rem;
+	display: flex;
+	justify-content: space-evenly;
+	padding-bottom: 1rem;
+}
+
+.mreza-link{
+	height: 50px;
+	background: transparent;
+}
+
+.youtube-link{
+	height: 60px;
+}
+
+.button-top{
+	margin-top: 4rem;
+	display: flex;
+	justify-content: center;
+}
+
+.anchor-top img{
+	height: 5rem;
+}
+
+
+/*U biografiji*/
+.naslov-bio{
+	color:black;
+	font-size: 2.5rem;
+	font-family: Georgia, serif;
+
+}
+
+.bio-tekst{
+	font-family: Georgia, serif;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	margin-top: 5rem;
+	font-size: 1.5rem;
+
+}
+
+.bio-tekst h2{
+	margin-top: 2rem;
+	font-weight: bold;
+}
+
+.bio-tekst p{
+	text-align: justify;
+}
+
+.bio-tekst p span{
+	margin-left: 4rem;
+}
+
+/*Za manje ekrane*/
+@media screen and (max-width: 815px){
+	.navbar{
+		border-top: 10px solid;
+		border-color: #fbf8f4;
+	}
+
+	h1,.div_video h1{
+		font-size:4.5rem;
+	}
+
+	.bio-tekst{
+		font-size:1.3rem;
+	}
+
+	.div_video{
+		width:80%;
+	}
+	.naslov-o-nama{
+		margin-left:15px;
+	}
+	.contact{
+		font-size: 1rem;
+	}
+	.contact-info h1{
+		font-size: 2.4rem;
+	}
+	
+}
+
+@media screen and (max-width: 640px) {
+
+    h1,.div_video h1{
+  		font-size: 3.7rem;
+  	}
+ 	.about{
+  		height: 27rem;
+	}
+
+  	.mreza-link{
+		height: 25px;
+	}
+	.youtube-link{
+		height: 35px;
+	}
+	.anchor-top img{
+		height: 3rem;
+	}
+
+	.naslov-bio{
+		font-size: 1.7rem;
+		margin: 2rem;
+		margin-top:0;
+	}
+
+	.bio-tekst{
+		font-size:1.2rem;
+	}
+}
+
+/* @media (inverted-colors:inverted){
+	body{
+		background-color: black;
+	}
+} */
+
+/* @media (prefers-color-scheme: dark) {
+	body{
+		background-color: rgb(240, 217, 241);
+	}
+	.navbar{
+		background-color: rgb(240, 217, 241);
+	}
+	#mainNavbar .nav-link {
+		color: black;
+	}
+	#mainNavbar .nav-link:hover {
+		color: rgba(178, 40, 178, 0.4);
+	}
+	.navbar-toggler-icon{
+		color:black;
+	}
+	.dropdown-menu{
+		background-color: rgb(240, 217, 241);
+	}
+	.dropdown-item{
+		font-size: 1.4rem;
+		color: black;
+	}
+	.dropdown-item:hover {
+		color: rgba(178, 40, 178, 0.4);
+	}
+	.boja-about{
+		background-color: rgba(178, 40, 178, 0.4);
+	}
+	.contact{
+		color:black;
+		background-color: rgba(178, 40, 178, 0.4);
+	}
+	.contact-info a{
+		color: black;
+	}.naslov-bio{
+		color:black;
+	}
+} */

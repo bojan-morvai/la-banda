@@ -1,0 +1,242 @@
+/* Page */
+@-moz-keyframes load-spinner {
+	0% {
+		-moz-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	100% {
+		-moz-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes load-spinner {
+	0% {
+		-moz-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	100% {
+		-moz-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@-ms-keyframes load-spinner {
+	0% {
+		-moz-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	100% {
+		-moz-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes load-spinner {
+	0% {
+		-moz-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	100% {
+		-moz-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@-ms-viewport {
+	width: device-width;
+}
+
+html {
+	width: 100%;
+	height: 10 rem;
+	scroll-behavior: smooth;
+	cursor: default;
+}
+
+body {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	-moz-justify-content: -moz-flex-start;
+	-webkit-justify-content: -webkit-flex-start;
+	-ms-justify-content: -ms-flex-start;
+	justify-content: flex-start;
+	-ms-overflow-style: scrollbar;
+	background-color: #fbf8f4;;
+	width: 100%;
+	min-height: 30rem;
+}
+
+
+
+.preload * {
+	-moz-animation: none !important;
+	-webkit-animation: none !important;
+	-ms-animation: none !important;
+	animation: none !important;
+	-moz-transition: none !important;
+	-webkit-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;
+	transition: none !important;
+}
+
+.preload::before {
+	-moz-transition: opacity 1s ease;
+	-webkit-transition: opacity 1s ease;
+	-ms-transition: opacity 1s ease;
+	transition: opacity 1s ease;
+	-moz-transition-delay: 0.75s;
+	-webkit-transition-delay: 0.75s;
+	-ms-transition-delay: 0.75s;
+	transition-delay: 0.75s;
+	opacity: 0.25;
+}
+
+@media screen and (max-width: 736px) {
+
+	html {
+		height: auto;
+	}
+
+	body {
+		height: auto;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	html, body {
+		min-width: 320px;
+	}
+
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.wrapper > * {
+  margin: 10px;
+}
+
+p {
+	font-family: 'Inconsolata', monospace;
+	text-align: center;
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin-bottom: 0.5rem;
+}
+
+.media {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: grayscale(80%);
+  transition: 0.7s;
+}
+
+.item-g{
+	display:flex;
+	flex-direction: column-reverse;
+	font-weight: bold;
+}
+
+.item-g-p{
+	margin-top: 0.2rem;
+	font-size: 20px;
+	display: none;
+}
+
+.media:hover {
+    filter: grayscale(0);
+    transform: scale(1.05); 
+}
+.media img {
+  max-width: 100%;
+  border-radius: 10px;
+  height: auto;
+}
+
+.layer {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 25%;
+  background: #FFF;
+  color: #151E3F;
+  transition: all 0.9s ease;
+}
+.layer p {
+  transition: all 0.9s ease;
+  transform: scale(0.1);
+}
+
+.media:hover .layer {
+  opacity: 0.8;
+  width: 90%;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+.media:hover .layer p {
+  transform: scale(1);
+  transition: all 0.9s ease;
+
+}
+
+@media screen and (max-width: 815px){
+	.layer{
+		display: none;
+	}
+	.item-g-p{
+		display: inline-block;
+	}
+}
+
+

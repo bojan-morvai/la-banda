@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<!-- Site made by Bojan Morvai -->
+<html lang='en'>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type">
+	<meta name="viewport" content="width=device-width, initial-scale=0.7"/>
+	<meta name="description" content="Tamburaški sastav La Banda Novi Sad, orkestar namenjen svim vašim proslavama...">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<link rel="icon" href="/public/images/logo.jpg">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/public/stylesheets/font.css">
+    <link rel="stylesheet" type="text/css" href="/public/stylesheets/main.css">
+	<link rel="stylesheet" type="text/css" href="/public/stylesheets/rvslider.min.css">
+	<link rel="stylesheet" type="text/css" href="/public/stylesheets/audio_element.css">
+	<title>La Banda orchestra</title>
+	<noscript>
+		<style>
+			body {
+				display: block;
+			}
+		</style>
+	</noscript>
+	
+</head>
+<body class='preload'>
+	<img src="/public/images/logo.jpg" alt="logo" hidden>
+	<nav id="mainNavbar" class="navbar navbar-light navbar-expand-lg py-0 fixed-top">
+		<a href="#top" class="navbar-brand" id='logo-nav'><img class='flag' src="/public/images/home.png" alt="HOME"></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+		</button>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav">
+            	
+                <li class="nav-item">
+                    <a href="#o-nama" class="nav-link">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a href="galerija_eng.html" class="nav-link">GALLERY</a>
+                </li>
+
+                <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          PROMO MATERIALS
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="/public/portfolio-eng.pdf" download target="_blank">Portfolio</a>
+			          <a class="dropdown-item" href="/public/logotip.pdf" download target="_blank">Logotip</a>
+			          <a class="dropdown-item" href="/public/Photos_La_Banda.rar" download target="_blank">Photos</a>
+			        </div>
+			     </li>
+            </ul>
+            <ul class="navbar-nav ml-auto bd-highlight">
+            	<li class="nav-item">
+            		<a href="#kontakt" class='nav-link'>CONTACT</a>
+            	</li>
+            	<li class='nav-link'>
+            		<a id='button-srb' href="index.html"><img class= 'flag' src="/public/images/serbian.png" alt="srb"></a>
+            	</li>
+            	<li class='nav-link'>
+            		<a id='button-eng' href="index_eng.html"><img class= 'flag' src="/public/images/english.png" alt="eng"></a>
+            	</li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class='kontenjer'>
+		<div class='kontenjer1'>
+			<h1 class='naslov-ucitavanje'>Orchestra <br>La Banda</h1>
+
+		
+			<picture>
+				<source media="(max-width:650px)" srcset="/public/images/cover_slika_950.jpg">
+				<source media="(min-width:800px)" srcset="/public/images/cover_slika_1900.jpg">
+				<img class='cover-pic' src="/public/images/cover_slika_950.jpg" alt="Cover Photo - La Banda" >
+			</picture>
+
+			<div class='kontenjer2' id='o-nama'>
+			<div class='boja-about'>
+				<div class='about'>
+					<h1 class='naslov-o-nama' id='o_nama_naslov'>About Us</h1>
+					<div class='info'>
+						<p class='tekst-about'>Greetings from Novi Sad! We are a female tamburitza orchestra from Novi Sad and we would like to take part in one of your performances when you are in the port of our town. We play different types of music (from traditional to popular music from different parts of the town) and we are sure it would be interesting for your travellers to experience our music. In the upcoming material you can find out something more about us.</p>
+						<a href="biografija_eng.html"><div class='btn btn-large btn-outline-dark'>More</div>
+						</a>
+					</div>
+				</div>
+				<hr class='h-line'>
+				<div class='about about-pesme'>
+					<h1 class='naslov-o-nama naslov-pesme'>Our Songs</h1>
+					<div class='audio-player-section'>
+						<h5 id="now-playing"></h5>
+						<img src="/public/images/prev.png" id="prev-song"></img>
+						<div id='audio-player'></div>
+						<img src="public/images/next.png" id="next-song"></img>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class='div_video'>
+				<h1 id='poslusaj'>Listen</h1>
+				<div class="rvs-container">
+					<div class="rvs-item-container">
+						<div class="rvs-item-stage">
+							<div class="rvs-item" style="background-image: url(https://i.ytimg.com/vi/JCFvsXVrsg8/maxresdefault.jpg)">
+								<p class="rvs-item-text">Male slatke stvari<small>La Banda</small></p>
+								<a href="https://www.youtube.com/watch?v=JCFvsXVrsg8" class="rvs-play-video"></a>
+							</div>
+							<div class="rvs-item" style="background-image: url(https://i.ytimg.com/vi/Lqv2r1DRfmY/maxresdefault.jpg)">
+								<p class="rvs-item-text">Osmeh za kraj <small>La Banda</small></p>
+								<a href="https://www.youtube.com/watch?v=Lqv2r1DRfmY" class="rvs-play-video"></a>
+							</div>
+							<div class="rvs-item" style="background-image: url(https://i.ytimg.com/vi/Rh4ba-Ty0bs/maxresdefault.jpg)">
+								<p class="rvs-item-text">Osmeh za kraj (tambura edition + lyrics) <small>La Banda</small></p>
+								<a href="https://www.youtube.com/watch?v=Rh4ba-Ty0bs" class="rvs-play-video"></a>
+							</div>
+							<div class="rvs-item" style="background-image: url(https://i.ytimg.com/vi/gumvEtbjBzQ/maxresdefault.jpg)">
+								<p class="rvs-item-text">Pjevam danju, pjevam noću (Zdravko Čolić)<small>La Banda</small></p>
+								<a href="https://www.youtube.com/watch?v=gumvEtbjBzQ" class="rvs-play-video"></a>
+							</div>
+							<div class="rvs-item" style="background-image: url(https://i.ytimg.com/vi/KIXUDsronck/maxresdefault.jpg)">
+								<p class="rvs-item-text">Stop! (Sam Brown) <small>La Banda</small></p>
+								<a href="https://www.youtube.com/watch?&v=KIXUDsronck" class="rvs-play-video"></a>
+							</div>
+							<div class="rvs-item" style="background-image: url(https://i.ytimg.com/vi/aL-kpGCGQik/maxresdefault.jpg)">
+								<p class="rvs-item-text">Summertime (George Gershwin) <small>La Banda</small></p>
+								<a href="https://www.youtube.com/watch?v=aL-kpGCGQik" class="rvs-play-video"></a>
+							</div>
+
+
+							<div class="rvs-item" style="background-image: url(https://i.ytimg.com/vi/0B6tv6R4Pwk/maxresdefault.jpg)">
+								<p class="rvs-item-text">Živote moj (Usnija Redžepova) <small>La Banda i Milan Jančurić</small></p>
+								<a href="https://www.youtube.com/watch?v=0B6tv6R4Pwk" class="rvs-play-video"></a>
+							</div>
+							<div class="rvs-item" style="background-image: url(https://i.ytimg.com/vi/mymuwRaFan0/maxresdefault.jpg)">
+								<p class="rvs-item-text">Volare (Gipsy Kings) <small>La Banda</small></p>
+								<a href="https://www.youtube.com/watch?v=mymuwRaFan0" class="rvs-play-video"></a>
+							</div>
+							<div class="rvs-item" style="background-image: url(https://i.ytimg.com/vi/b3eb7Dy1PoY/maxresdefault.jpg)">
+								<p class="rvs-item-text">Jedan dan života (Lepa Brena i Miroslav Ilić) <small>La Banda i Nikola Zekić</small></p>
+								<a href="https://www.youtube.com/watch?v=b3eb7Dy1PoY" class="rvs-play-video"></a>
+							</div>
+							<div class="rvs-item" style="background-image: url(https://i.ytimg.com/vi/WmWM4jLEJ5M/hqdefault.jpg)">
+								<p class="rvs-item-text">Ljuljaj me nežno/Crazy Little Thing Called Love/I Feel Good <small>La Banda i Milan Jančurić</small></p>
+								<a href="https://www.youtube.com/watch?v=WmWM4jLEJ5M" class="rvs-play-video"></a>
+							</div>
+							<div class="rvs-item" style="background-image: url(https://i.ytimg.com/vi/yHrJpano8vk/hqdefault.jpg)">
+								<p class="rvs-item-text">Can&#x27;t Take My Eyes Off You (Frankie Valli) <small>La Banda</small></p>
+								<a href="https://www.youtube.com/watch?v=yHrJpano8vk" class="rvs-play-video"></a>
+							</div>
+							<div class="rvs-item" style="background-image: url(https://i.ytimg.com/vi/zHzlQ-qJ_Hk/maxresdefault.jpg)">
+								<p class="rvs-item-text">Volim osmeh tvoj (Toše Proeski i Antonija Šola) <small>La Banda i Nikola Zekić</small></p>
+								<a href="https://www.youtube.com/watch?v=zHzlQ-qJ_Hk" class="rvs-play-video"></a>
+							</div>
+							<div class="rvs-item" style="background-image: url(https://i.ytimg.com/vi/jVdhbED33_M/maxresdefault.jpg)">
+								<p class="rvs-item-text">In the Mood (Glenn Miller) <small>La Banda i Milan Jančurić</small></p>
+								<a href="https://www.youtube.com/watch?v=jVdhbED33_M" class="rvs-play-video"></a>
+							</div>
+							<div class="rvs-item" style="background-image: url(https://i.ytimg.com/vi/syyErAQ9Uf4/maxresdefault.jpg)">
+								<p class="rvs-item-text">Girls Just Want to Have Fun (Cyndi Lauper) <small>La Banda</small></p>
+								<a href="https://www.youtube.com/watch?v=syyErAQ9Uf4" class="rvs-play-video"></a>
+							</div>
+							<div class="rvs-item" style="background-image: url(https://i.ytimg.com/vi/TItszvXz9Vc/maxresdefault.jpg)">
+								<p class="rvs-item-text">Billie Jean (Michael Jackson) <small>La Banda</small></p>
+								<a href="https://www.youtube.com/watch?v=TItszvXz9Vc" class="rvs-play-video"></a>
+							</div>
+						</div>
+					</div>
+					<div class="rvs-nav-container">
+						<a class="rvs-nav-prev"></a>
+						<div class="rvs-nav-stage">
+							<a class="rvs-nav-item">
+								<span class="rvs-nav-item-thumb" style="background-image: url(https://i.ytimg.com/vi/JCFvsXVrsg8/maxresdefault.jpg)"></span>
+								<h4 class="rvs-nav-item-title">Male slatke stvari</h4>
+								<small class="rvs-nav-item-credits">La Banda</small>
+							</a>
+							<a class="rvs-nav-item">
+								<span class="rvs-nav-item-thumb" style="background-image: url(https://i.ytimg.com/vi/Lqv2r1DRfmY/maxresdefault.jpg)"></span>
+								<h4 class="rvs-nav-item-title">Osmeh za kraj</h4>
+								<small class="rvs-nav-item-credits">La Banda</small>
+							</a>
+							<a class="rvs-nav-item">
+								<span class="rvs-nav-item-thumb" style="background-image: url(https://i.ytimg.com/vi/Rh4ba-Ty0bs/default.jpg)"></span>
+								<h4 class="rvs-nav-item-title">Osmeh za kraj (tambura edition + lyrics)</h4>
+								<small class="rvs-nav-item-credits">La Banda</small>
+							</a>
+							<a class="rvs-nav-item">
+								<span class="rvs-nav-item-thumb" style="background-image: url(https://i.ytimg.com/vi/gumvEtbjBzQ/default.jpg)"></span>
+								<h4 class="rvs-nav-item-title">Pjevam danju, pjevam noću (Zdravko Čolić)</h4>
+								<small class="rvs-nav-item-credits">La Banda</small>
+							</a>
+							<a class="rvs-nav-item">
+								<span class="rvs-nav-item-thumb" style="background-image: url(https://i.ytimg.com/vi/KIXUDsronck/default.jpg)"></span>
+								<h4 class="rvs-nav-item-title">Stop! (Sam Brown)</h4>
+								<small class="rvs-nav-item-credits">La Banda</small>
+							</a>
+							<a class="rvs-nav-item">
+								<span class="rvs-nav-item-thumb" style="background-image: url(https://i.ytimg.com/vi/aL-kpGCGQik/default.jpg)"></span>
+								<h4 class="rvs-nav-item-title">Summertime (George Gershwin)</h4>
+								<small class="rvs-nav-item-credits">La Banda</small>
+							</a>
+							<a class="rvs-nav-item">
+								<span class="rvs-nav-item-thumb" style="background-image: url(https://i.ytimg.com/vi/0B6tv6R4Pwk/default.jpg)"></span>
+								<h4 class="rvs-nav-item-title">Živote moj (Usnija Redžepova)</h4>
+								<small class="rvs-nav-item-credits">La Banda i Milan Jančurić</small>
+							</a>
+							<a class="rvs-nav-item">
+								<span class="rvs-nav-item-thumb" style="background-image: url(https://i.ytimg.com/vi/mymuwRaFan0/default.jpg)"></span>
+								<h4 class="rvs-nav-item-title">Volare (Gipsy Kings)</h4>
+								<small class="rvs-nav-item-credits">La Banda</small>
+							</a>
+							<a class="rvs-nav-item">
+								<span class="rvs-nav-item-thumb" style="background-image: url(https://i.ytimg.com/vi/b3eb7Dy1PoY/default.jpg)"></span>
+								<h4 class="rvs-nav-item-title">Jedan dan života (Lepa Brena i Miroslav Ilić)</h4>
+								<small class="rvs-nav-item-credits">La Banda i Nikola Zekić</small>
+							</a>
+							<a class="rvs-nav-item">
+								<span class="rvs-nav-item-thumb" style="background-image: url(https://i.ytimg.com/vi/WmWM4jLEJ5M/default.jpg)"></span>
+								<h4 class="rvs-nav-item-title">Ljuljaj me nežno/Crazy Little Thing Called Love/I Feel Good</h4>
+								<small class="rvs-nav-item-credits">La Banda i Milan Jančurić</small>
+							</a>
+							<a class="rvs-nav-item">
+								<span class="rvs-nav-item-thumb" style="background-image: url(https://i.ytimg.com/vi/yHrJpano8vk/default.jpg)"></span>
+								<h4 class="rvs-nav-item-title">Can&#x27;t Take My Eyes Off You (Frankie Valli)</h4>
+								<small class="rvs-nav-item-credits">La Banda</small>
+							</a>
+							<a class="rvs-nav-item">
+								<span class="rvs-nav-item-thumb" style="background-image: url(https://i.ytimg.com/vi/zHzlQ-qJ_Hk/default.jpg)"></span>
+								<h4 class="rvs-nav-item-title">Volim osmeh tvoj (Toše Proeski i Antonija Šola)</h4>
+								<small class="rvs-nav-item-credits">La Banda i Nikola Zekić</small>
+							</a>
+							<a class="rvs-nav-item">
+								<span class="rvs-nav-item-thumb" style="background-image: url(https://i.ytimg.com/vi/jVdhbED33_M/default.jpg)"></span>
+								<h4 class="rvs-nav-item-title">In the Mood (Glenn Miller)</h4>
+								<small class="rvs-nav-item-credits">La Banda i Milan Jančurić</small>
+							</a>
+							<a class="rvs-nav-item">
+								<span class="rvs-nav-item-thumb" style="background-image: url(https://i.ytimg.com/vi/syyErAQ9Uf4/default.jpg)"></span>
+								<h4 class="rvs-nav-item-title">Girls Just Want to Have Fun (Cyndi Lauper)</h4>
+								<small class="rvs-nav-item-credits">La Banda</small>
+							</a>
+							<a class="rvs-nav-item">
+								<span class="rvs-nav-item-thumb" style="background-image: url(https://i.ytimg.com/vi/TItszvXz9Vc/default.jpg)"></span>
+								<h4 class="rvs-nav-item-title">Billie Jean (Michael Jackson)</h4>
+								<small class="rvs-nav-item-credits">La Banda</small>
+							</a>
+						</div>
+						<a class="rvs-nav-next"></a>
+					</div>
+				</div>
+
+			</div>
+		</div>	
+		<div class='kontenjer1' id='kontakt'>
+			<div class='contact'>
+				<div class='contact-slika'>
+					<picture>
+						<source media="(max-width:650px)" srcset="/public/images/contact_slika_700.jpg">
+						<source media="(min-width:800px)" srcset="/public/images/contact_slika_1000.jpg">
+						<img src="/public/images/contact_slika_700.jpg" alt="Photo La Banda">
+					</picture>
+				</div>
+				<div class='contact-info'>
+					<h1><strong>Contact</strong></h1>
+					<p>Novi Sad, Serbia</p>
+					<a href="mailto:la.banda@mail.com"><p>la.banda@mail.com</p></a>
+					<a href="tel:+381642564022"><p>+381642564022</p></a>
+					<div class= 'contact-linkovi'>
+						<a target="_blank" href="https://www.facebook.com/labandatambura">
+						<img class='mreza-link' src="/public/images/facebook.png" alt="fb">
+						</a>
+						<a target="_blank" href="https://www.youtube.com/channel/UC6MfQxsiXrfL5DRp8eiT3dA">
+						<img class='mreza-link youtube-link' src="/public/images/youtube.png" alt="yt">
+						</a>
+						<a target="_blank" href="https://soundcloud.com/la-banda-4">
+							<img class='mreza-link' src="/public/images/soundcloud.png" alt="sc">
+						</a>
+						<a target="_blank" href="https://www.instagram.com/ts.labanda/">
+							<img class='mreza-link' src="/public/images/instagram.png" alt="insta">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='button-top'>
+			<a class='anchor-top' href="#top"><img src="/public/images/page-up.png" alt="Up"></a>
+		</div>
+	</div>
+
+<script src='/public/scripts/lightbox-plus-jquery.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src='/public/scripts/rvslider.min.js'></script>
+<script src='/public/scripts/script.js'></script>
+
+
+</body>
+</html>
